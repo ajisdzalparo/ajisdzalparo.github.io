@@ -1,0 +1,147 @@
+:root {
+    --utama: #30A2FF;
+    --second: #F1C93B;
+    --footer: #0A6EBD;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--utama);
+}
+
+.text-utama {
+    color: var(--utama);
+}
+
+.text-second {
+    color: var(--second);
+}
+
+.bg-utama {
+    background-color: #30A2FF;
+}
+
+.bg-second {
+    background-color: var(--second);
+}
+
+.bg-footer {
+    background-color: #0A6EBD;
+}
+
+.logo {
+    width: 240px;
+}
+
+.active-custom {
+    color: #F1C93B;
+}
+
+.link-custom {
+    color: white;
+}
+
+.link-custom:hover {
+    color: var(--second);
+}
+
+.link-custom::after {
+    color: var(--second);
+    content: '';
+    display: block;
+    border-bottom: .1rem solid var(--second);
+    transform: scaleX(0);
+    transition: .3s linear;
+}
+
+.link-custom:hover::after {
+    transform: scaleX(0.7);
+}
+
+.carousel-item img {
+    align-items: center;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.wisata {
+    margin-top: 16rem;
+}
+
+.image:hover {
+    width: 390px;
+    height: 390px;
+    rotate: -10deg;
+    transition: .7s ease;
+}
+
+.image img:hover {
+    width: 105%;
+    height: 105%;
+    transition: .5s ease;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.about {
+    margin-top: 7rem;
+}
+
+.image>img {
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+}
+
+@media (max-width: 992px) {
+    .text-jadwal {
+        font-size: .7rem;
+    }
+    .contact {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        transition: .3s ease-out;
+    }
+    .image>img {
+        width: 100%;
+        height: 100%;
+        transition: .5s ease;
+    }
+    .image img:hover {
+        width: 105%;
+        height: 105%;
+        transition: .5s ease;
+    }
+    .image:hover {
+        width: 98%;
+        height: 98%;
+        rotate: 0deg;
+        transition: .5s ease;
+    }
+}
